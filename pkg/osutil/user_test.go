@@ -15,7 +15,7 @@ func TestLimaUserWarn(t *testing.T) {
 }
 
 func validUsername(username string) bool {
-	validName := "^[a-z_][a-z0-9_-]*$"
+	validName := "^[a-z_][a-z0-9._-]*$"
 	return regexp.MustCompile(validName).Match([]byte(username))
 }
 
